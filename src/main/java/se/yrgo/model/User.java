@@ -1,4 +1,4 @@
-package se.yrgo.model;
+    package se.yrgo.model;
 
 import se.yrgo.model.*;
 
@@ -40,8 +40,10 @@ public class User {
                         break;
                 }
             }
-        } catch (Exception e) {
+        } catch (Exception exc) {
             // TODO: handle exception
+            System.out.println("Something went wrong!" + exc.getMessage());
+            exc.printStackTrace();
         }
     }
 }
